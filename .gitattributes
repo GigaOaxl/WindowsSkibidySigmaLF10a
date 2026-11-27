@@ -1,0 +1,22 @@
+# C++Builder arbeitet mit CRLF. Textdateien werden im Repository normalisiert
+# und im Arbeitsverzeichnis immer mit CRLF ausgecheckt (auch unter Linux/macOS).
+* text=auto eol=crlf
+
+# Quelltext und Projektdateien von C++Builder
+*.cpp    text=auto eol=crlf
+*.h      text=auto eol=crlf
+*.hpp    text=auto eol=crlf
+*.dfm    text=auto eol=crlf
+*.cbproj text=auto eol=crlf
+*.groupproj text=auto eol=crlf
+*.md     text eol=crlf
+
+# Binärdateien nie verändern
+*.res binary
+*.ico binary
+*.bmp binary
+*.png binary
+*.jpg binary
+*.exe binary
+*.dll binary
+*.lib binary
