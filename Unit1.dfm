@@ -62,4 +62,18 @@ object frmHaupt: TfrmHaupt
     Caption = #220'bernehmen'
     TabOrder = 3
   end
+  object edtEingabe: TEdit
+    Left = 320
+    Top = 101
+    Width = 140
+    Height = 23
+    TabOrder = 2
+  end
+  object cgrHintergrund: TColorGrid
+    Left = 600
+    Top = 40
+    Width = 100
+    Height = 100
+    TabOrder = 4
+  end
 end

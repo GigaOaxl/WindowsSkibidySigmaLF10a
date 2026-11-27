@@ -9,6 +9,7 @@
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include "Vcl.ColorGrd.hpp"
 //---------------------------------------------------------------------------
 class TfrmHaupt : public TForm
 {
@@ -18,6 +19,8 @@ __published:	// Von der IDE verwaltete Komponenten
 	TButton *btnAnzeigen;		// Zeigt "Hallo Welt" an und blendet sich aus
 	TButton *btnZuruecksetzen;	// Setzt "Label1" zurück und zeigt btnAnzeigen wieder an
 	TButton *btnUebernehmen;	// Übernimmt den Text aus edtEingabe
+	TEdit *edtEingabe;		// Eingabefeld für den Text
+	TColorGrid *cgrHintergrund;	// Farbraster für die Hintergrundfarbe (Palette "Samples")
 private:	// Benutzer-Deklarationen
 public:		// Benutzer-Deklarationen
 	__fastcall TfrmHaupt(TComponent* Owner);
