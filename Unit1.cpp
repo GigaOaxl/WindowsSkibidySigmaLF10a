@@ -31,8 +31,10 @@ void __fastcall TfrmHaupt::btnZuruecksetzenClick(TObject *Sender)
 	btnAnzeigen->Visible = true;
 }
 //---------------------------------------------------------------------------
+// Übernimmt den Text aus dem Eingabefeld in die fette Beschriftung
 void __fastcall TfrmHaupt::btnUebernehmenClick(TObject *Sender)
 {
+	lblAusgabe->Caption = edtEingabe->Text;
 }
 //---------------------------------------------------------------------------
 void __fastcall TfrmHaupt::cgrHintergrundChange(TObject *Sender)
