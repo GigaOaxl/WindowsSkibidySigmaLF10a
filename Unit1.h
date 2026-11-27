@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 // Unit1.h - Deklaration des Hauptformulars TfrmHaupt
 //---------------------------------------------------------------------------
 
@@ -13,6 +13,11 @@
 class TfrmHaupt : public TForm
 {
 __published:	// Von der IDE verwaltete Komponenten
+	TLabel *lblGruss;		// Obere Beschriftung: "Label1" bzw. "Hallo Welt"
+	TLabel *lblAusgabe;		// Fette Beschriftung für den übernommenen Text
+	TButton *btnAnzeigen;		// Zeigt "Hallo Welt" an und blendet sich aus
+	TButton *btnZuruecksetzen;	// Setzt "Label1" zurück und zeigt btnAnzeigen wieder an
+	TButton *btnUebernehmen;	// Übernimmt den Text aus edtEingabe
 private:	// Benutzer-Deklarationen
 public:		// Benutzer-Deklarationen
 	__fastcall TfrmHaupt(TComponent* Owner);
