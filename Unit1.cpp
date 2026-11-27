@@ -37,7 +37,10 @@ void __fastcall TfrmHaupt::btnUebernehmenClick(TObject *Sender)
 	lblAusgabe->Caption = edtEingabe->Text;
 }
 //---------------------------------------------------------------------------
+// Ändert die Hintergrundfarbe des Fensters auf die gewählte Farbe
+// (Linksklick im Farbraster wählt die Vordergrundfarbe = ForegroundColor)
 void __fastcall TfrmHaupt::cgrHintergrundChange(TObject *Sender)
 {
+	Color = cgrHintergrund->ForegroundColor;
 }
 //---------------------------------------------------------------------------
