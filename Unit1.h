@@ -21,6 +21,10 @@ __published:	// Von der IDE verwaltete Komponenten
 	TButton *btnUebernehmen;	// Übernimmt den Text aus edtEingabe
 	TEdit *edtEingabe;		// Eingabefeld für den Text
 	TColorGrid *cgrHintergrund;	// Farbraster für die Hintergrundfarbe (Palette "Samples")
+	void __fastcall btnAnzeigenClick(TObject *Sender);
+	void __fastcall btnZuruecksetzenClick(TObject *Sender);
+	void __fastcall btnUebernehmenClick(TObject *Sender);
+	void __fastcall cgrHintergrundChange(TObject *Sender);
 private:	// Benutzer-Deklarationen
 public:		// Benutzer-Deklarationen
 	__fastcall TfrmHaupt(TComponent* Owner);

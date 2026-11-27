@@ -45,6 +45,7 @@ object frmHaupt: TfrmHaupt
     Height = 25
     Caption = 'Anzeigen'
     TabOrder = 0
+    OnClick = btnAnzeigenClick
   end
   object btnZuruecksetzen: TButton
     Left = 170
@@ -53,6 +54,7 @@ object frmHaupt: TfrmHaupt
     Height = 25
     Caption = 'Zur'#252'cksetzen'
     TabOrder = 1
+    OnClick = btnZuruecksetzenClick
   end
   object btnUebernehmen: TButton
     Left = 470
@@ -61,6 +63,7 @@ object frmHaupt: TfrmHaupt
     Height = 25
     Caption = #220'bernehmen'
     TabOrder = 3
+    OnClick = btnUebernehmenClick
   end
   object edtEingabe: TEdit
     Left = 320
@@ -75,5 +78,6 @@ object frmHaupt: TfrmHaupt
     Width = 100
     Height = 100
     TabOrder = 4
+    OnChange = cgrHintergrundChange
   end
 end
