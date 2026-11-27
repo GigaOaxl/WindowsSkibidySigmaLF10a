@@ -24,8 +24,11 @@ void __fastcall TfrmHaupt::btnAnzeigenClick(TObject *Sender)
 	btnAnzeigen->Visible = false;
 }
 //---------------------------------------------------------------------------
+// Setzt die Beschriftung auf "Label1" zurück und zeigt btnAnzeigen wieder an
 void __fastcall TfrmHaupt::btnZuruecksetzenClick(TObject *Sender)
 {
+	lblGruss->Caption = "Label1";
+	btnAnzeigen->Visible = true;
 }
 //---------------------------------------------------------------------------
 void __fastcall TfrmHaupt::btnUebernehmenClick(TObject *Sender)
