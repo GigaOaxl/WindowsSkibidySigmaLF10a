@@ -1,0 +1,81 @@
+# Technische Dokumentation
+
+## 1. Entwicklungsumgebung
+
+| Punkt          | Wert |
+|----------------|------|
+| IDE            | Embarcadero C++Builder 12 Community Edition |
+| Framework      | VCL (Visual Component Library) |
+| Sprache        | C++ (Clang-basierter Compiler bcc32c) |
+| Zielplattform  | Windows 32 Bit |
+| Versionsverwaltung | Git / GitHub |
+
+## 2. Projektaufbau
+
+```
+WindowsSkibidySigmaLF10a/
+├── Project1.cbproj   Projektdatei (C++Builder)
+├── Project1.cpp      Hauptprogramm (WinMain, von der IDE erzeugt)
+├── Unit1.cpp         Ereignishandler des Hauptformulars
+├── Unit1.h           Klassendeklaration des Hauptformulars
+├── Unit1.dfm         Formularbeschreibung (Komponenten, Eigenschaften, Ereignisse)
+├── docs/             Dokumentation
+└── README.md
+```
+
+*(An die tatsächlichen Dateinamen anpassen, sobald das Projekt angelegt ist.)*
+
+| Datei | Zweck |
+|-------|-------|
+| `.cbproj` | Projekteinstellungen, Liste der Units, Build-Konfigurationen |
+| `.dfm` | Textbeschreibung des Formulars (Komponenten, Eigenschaften, Ereigniszuweisungen) |
+| `.h` | Klassendeklaration des Formulars (Komponenten als `__published`-Member, Handler) |
+| `.cpp` | Implementierung der Ereignishandler |
+
+## 3. Klassen
+
+### 3.1 Hauptformular `TfrmHaupt`
+
+Abgeleitet von `TForm`, deklariert in `Unit1.h`, implementiert in `Unit1.cpp`.
+Die Komponenten (siehe Abschnitt 4) sind `__published`-Member der Klasse.
+
+## 4. Komponenten (geplant)
+
+Namenskonvention: englisches Typ-Präfix + deutscher Name. In der Spalte „Demo“ steht
+der Name aus der Vorführung im Unterricht.
+
+| Name | Typ | Demo | Wichtige Eigenschaften | Zweck |
+|------|-----|------|------------------------|-------|
+| `frmHaupt` | `TForm` | `Form1` | `Caption = "Hallo Welt"` | Hauptfenster |
+| `lblGruss` | `TLabel` | `Label1` | `Caption = "Label1"` | Zeigt „Hallo Welt“ bzw. „Label1“ |
+| `btnAnzeigen` | `TButton` | `Button1` | `Caption = "Anzeigen"` | Setzt „Hallo Welt“, blendet sich aus |
+| `btnZuruecksetzen` | `TButton` | `Button2` | `Caption = "Zurücksetzen"` | Setzt „Label1“, blendet `btnAnzeigen` ein |
+| `lblAusgabe` | `TLabel` | `Label2` | `Font->Style = fsBold` | Zeigt den übernommenen Text |
+| `edtEingabe` | `TEdit` | `Edit1` | `Text = ""` | Texteingabe |
+| `btnUebernehmen` | `TButton` | `Button3` | `Caption = "Übernehmen"` | Übernimmt Text aus `edtEingabe` |
+| `cgrHintergrund` | `TColorGrid` (Palette „Samples“) | `ColorGrid1` | – | Auswahl der Hintergrundfarbe |
+
+## 5. Ereignisse (geplant)
+
+| Komponente | Ereignis | Handler | Ablauf |
+|------------|----------|---------|--------|
+| `btnAnzeigen` | `OnClick` | `btnAnzeigenClick` | `lblGruss->Caption = "Hallo Welt"`, `btnAnzeigen->Visible = false` |
+| `btnZuruecksetzen` | `OnClick` | `btnZuruecksetzenClick` | `lblGruss->Caption = "Label1"`, `btnAnzeigen->Visible = true` |
+| `btnUebernehmen` | `OnClick` | `btnUebernehmenClick` | `lblAusgabe->Caption = edtEingabe->Text` |
+| `cgrHintergrund` | `OnChange` | `cgrHintergrundChange` | `frmHaupt->Color = cgrHintergrund->ForegroundColor` |
+
+## 6. Fehlerbehandlung
+
+Es gibt keine Zahleneingaben; ein leeres Eingabefeld ergibt eine leere Beschriftung.
+*(Ergänzen, falls weitere Prüfungen hinzukommen.)*
+
+## 7. Tests
+
+| Nr. | Testfall | Eingabe | Erwartetes Ergebnis | Ergebnis |
+|-----|----------|---------|---------------------|----------|
+| T01 | Programmstart | – | Fenster „Hallo Welt“, oben steht „Label1“ | |
+| T02 | Klick „Anzeigen“ | – | Oben steht „Hallo Welt“, Button verschwindet | |
+| T03 | Klick „Zurücksetzen“ | – | Oben steht „Label1“, „Anzeigen“ ist wieder sichtbar | |
+| T04 | Text übernehmen | „Test 123“, Klick „Übernehmen“ | Fett gedruckte Beschriftung zeigt „Test 123“ | |
+| T05 | Leeres Feld übernehmen | leer, Klick „Übernehmen“ | Beschriftung ist leer, kein Absturz | |
+| T06 | Farbe wählen | Linksklick auf Rot im Farbraster | Fensterhintergrund wird rot | |
