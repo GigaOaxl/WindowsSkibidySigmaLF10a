@@ -30,7 +30,6 @@ immer nur eine Person gleichzeitig.** Wer das Formular gerade „besitzt“, ste
 | Ereignishandler (Logik) | Vova | `main` | erledigt |
 | Benutzerhandbuch, README | Vova | `main` | erledigt |
 | Test in C++Builder (T01–T06), Screenshots | Vova / Alex | `main` | offen |
-| Klären: Edit2, RadioButton1/2, Animate1, FormClick | Vova / Alex | – | offen |
 | Fazit | Vova / Alex | `main` | offen |
 
 **Formular wird aktuell bearbeitet von:** niemand

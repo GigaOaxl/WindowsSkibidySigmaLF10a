@@ -25,8 +25,6 @@ wie `OnClick` reagieren).
 | F03  | Ein Klick auf den zweiten Button setzt den Text der oberen Beschriftung wieder auf „Label1“ und blendet den ersten Button wieder ein. | `Button2`, `Label1`, `Button1` | Muss | umgesetzt, Test in der IDE offen |
 | F04  | Ein Klick auf den dritten Button übernimmt den Text aus dem Eingabefeld in die fett gedruckte Beschriftung über dem Eingabefeld. | `Button3`, `Edit1`, `Label2` | Muss | umgesetzt, Test in der IDE offen |
 | F05  | Über ein Farbraster kann die Hintergrundfarbe des Fensters geändert werden. | `ColorGrid1` | Muss | umgesetzt, Test in der IDE offen |
-| F06  | **(offen)** Zweck von `Edit2`, `RadioButton1`, `RadioButton2` und `Animate1` – in der Demo in der Strukturansicht vorhanden, auf dem Formular nicht sichtbar. | – | offen | offen |
-| F07  | **(offen)** Dem Formular ist ein `OnClick`-Handler (`FormClick`) zugewiesen – was er tut, ist nicht bekannt. | `Form1` | offen | offen |
 
 ## 4. Nichtfunktionale Anforderungen
 
