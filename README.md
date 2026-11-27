@@ -9,8 +9,8 @@ Nachbau der im Unterricht vorgeführten VCL-Demo „Hallo Welt“: Buttons ände
 verstecken Beschriftungen, ein Eingabefeld überträgt Text in eine Beschriftung, und über
 ein Farbraster lässt sich die Hintergrundfarbe des Fensters ändern. Die genauen Anforderungen stehen im [Pflichtenheft](docs/Pflichtenheft.md).
 
-> Stand: Projekt wird gerade aufgesetzt. Die Funktionen werden hier ergänzt,
-> sobald sie umgesetzt sind.
+> Stand: alle Funktionen aus der Vorführung sind umgesetzt. Der Test in C++Builder steht
+> noch aus (siehe Testfälle in der technischen Dokumentation).
 
 ## Voraussetzungen
 
@@ -24,12 +24,12 @@ ein Farbraster lässt sich die Hintergrundfarbe des Fensters ändern. Die genaue
    ```
    git clone https://github.com/GigaOaxl/WindowsSkibidySigmaLF10a.git
    ```
-2. C++Builder starten und über **Datei → Projekt öffnen…** die Datei `*.cbproj`
+2. C++Builder starten und über **Datei → Projekt öffnen…** die Datei `Project1.cbproj`
    im Projektordner öffnen.
 3. In der **Projektverwaltung** als Zielplattform **Windows 32 Bit** auswählen.
 4. Konfiguration **Debug** (zum Entwickeln) oder **Release** (zur Abgabe) wählen.
 5. **Projekt → Erzeugen** (Umschalt+F9) bzw. mit **F9** starten.
-6. Die fertige `.exe` liegt danach in `Win32\Debug\` bzw. `Win32\Release\`
+6. Die fertige `Project1.exe` liegt danach in `Win32\Debug\` bzw. `Win32\Release\`
    (dieser Ordner wird nicht ins Repository übernommen).
 
 ## Bedienung
@@ -38,7 +38,10 @@ Kurzüberblick – ausführlich im [Benutzerhandbuch](docs/Benutzerhandbuch.md).
 
 | Element | Funktion |
 |---------|----------|
-| *(wird ergänzt)* | |
+| **Anzeigen** | Zeigt oben „Hallo Welt“ an und blendet sich aus |
+| **Zurücksetzen** | Setzt die Beschriftung auf „Label1“ zurück und zeigt **Anzeigen** wieder an |
+| Eingabefeld + **Übernehmen** | Zeigt den eingegebenen Text fett über dem Eingabefeld an |
+| Farbraster | Linksklick auf eine Farbe ändert den Fensterhintergrund |
 
 ## Dokumentation
 
