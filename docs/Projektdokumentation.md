@@ -47,7 +47,6 @@ immer nur eine Person gleichzeitig.** Wer das Formular gerade „besitzt“, ste
 | Problem | Lösung |
 |---------|--------|
 | Ursprünglich waren Feature-Branches mit Pull Requests geplant. Für zwei Personen und ein kleines Projekt war das zu aufwendig. | Umstellung auf direktes Arbeiten auf `main`, Absprache über das Formular. |
-|---------|--------|
 | Das Projekt wurde außerhalb der IDE (mit Claude Code unter Linux) angelegt, `Project1.cbproj` ist also nicht von C++Builder erzeugt. | Beim ersten Öffnen in C++Builder prüfen. Falls die IDE die Datei ablehnt: neues VCL-Projekt anlegen, `Unit1.cpp` über **Projekt → Dem Projekt hinzufügen** einbinden und als `Project1.cbproj` speichern. |
 
 ## 6. Fazit
