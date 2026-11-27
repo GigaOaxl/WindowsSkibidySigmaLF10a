@@ -66,10 +66,13 @@ Bitte aktuell halten, wenn sich am Projekt etwas Grundlegendes ändert.
 
 ## Arbeitsweise mit Git
 
-- Pro Aufgabe ein eigener Branch (`feature/…`, `docs/…`, `fix/…`), Merge per Pull Request.
+- Es wird direkt auf `main` gearbeitet (Entscheidung des Teams vom 27.11.2026), keine
+  Feature-Branches und keine Pull Requests.
+- Vor dem Arbeiten immer `git pull`, nach jedem fertigen Schritt committen und pushen,
+  damit die andere Person nicht auf einem alten Stand arbeitet.
 - Kleine Commits mit deutschen Nachrichten im Präsens/Imperativ,
   z. B. `Füge Berechnung hinzu`, `Ergänze Dokumentation`.
-- Vor dem Arbeiten immer `git pull` auf `main`, danach neuen Branch abzweigen.
+- Vor dem Öffnen eines Formulars im Team absprechen, wer es bearbeitet (siehe oben).
 - Nach jedem Feature die Dokumentation in `docs/` und das `README.md` aktualisieren.
 - Nicht ins Repository: Build-Ausgabe (`Win32/`), `__history/`, `*.local`, `*.identcache`
   usw. (siehe `.gitignore`).
