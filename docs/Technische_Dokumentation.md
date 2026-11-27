@@ -41,7 +41,7 @@ auch auf Rechnern ohne C++Builder.
 Abgeleitet von `TForm`, deklariert in `Unit1.h`, implementiert in `Unit1.cpp`.
 Die Komponenten (siehe Abschnitt 4) sind `__published`-Member der Klasse.
 
-## 4. Komponenten (geplant)
+## 4. Komponenten
 
 Namenskonvention: englisches Typ-Präfix + deutscher Name. In der Spalte „Demo“ steht
 der Name aus der Vorführung im Unterricht.
@@ -52,12 +52,15 @@ der Name aus der Vorführung im Unterricht.
 | `lblGruss` | `TLabel` | `Label1` | `Caption = "Label1"` | Zeigt „Hallo Welt“ bzw. „Label1“ |
 | `btnAnzeigen` | `TButton` | `Button1` | `Caption = "Anzeigen"` | Setzt „Hallo Welt“, blendet sich aus |
 | `btnZuruecksetzen` | `TButton` | `Button2` | `Caption = "Zurücksetzen"` | Setzt „Label1“, blendet `btnAnzeigen` ein |
-| `lblAusgabe` | `TLabel` | `Label2` | `Font->Style = fsBold` | Zeigt den übernommenen Text |
+| `lblAusgabe` | `TLabel` | `Label2` | `Caption = "Label2"`, `Font->Style = fsBold` | Zeigt den übernommenen Text |
 | `edtEingabe` | `TEdit` | `Edit1` | `Text = ""` | Texteingabe |
 | `btnUebernehmen` | `TButton` | `Button3` | `Caption = "Übernehmen"` | Übernimmt Text aus `edtEingabe` |
-| `cgrHintergrund` | `TColorGrid` (Palette „Samples“) | `ColorGrid1` | – | Auswahl der Hintergrundfarbe |
+| `cgrHintergrund` | `TColorGrid` (Palette „Samples“, Unit `Vcl.ColorGrd`) | `ColorGrid1` | `#pragma link "Vcl.ColorGrd"` in `Unit1.cpp` | Auswahl der Hintergrundfarbe |
 
-## 5. Ereignisse (geplant)
+## 5. Ereignisse
+
+Die Zuweisung steht in `Unit1.dfm` (`OnClick = …`), die Deklaration in `Unit1.h` und die
+Implementierung in `Unit1.cpp`.
 
 | Komponente | Ereignis | Handler | Ablauf |
 |------------|----------|---------|--------|
