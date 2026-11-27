@@ -14,6 +14,7 @@
 | Datum      | Schritt | Wer |
 |------------|---------|-----|
 | 27.11.2026 | Repository eingerichtet, `.gitignore`, `.gitattributes`, Dokumentationsgerüst | Vova |
+| 27.11.2026 | VCL-Projekt `Project1` mit leerem Hauptformular `frmHaupt` angelegt | Vova |
 
 ## 3. Aufgabenverteilung
 
@@ -37,7 +38,7 @@ immer nur eine Person gleichzeitig.** Wer das Formular gerade „besitzt“, ste
 
 | Problem | Lösung |
 |---------|--------|
-| *(wird ergänzt)* | |
+| Das Projekt wurde außerhalb der IDE (mit Claude Code unter Linux) angelegt, `Project1.cbproj` ist also nicht von C++Builder erzeugt. | Beim ersten Öffnen in C++Builder prüfen. Falls die IDE die Datei ablehnt: neues VCL-Projekt anlegen, `Unit1.cpp` über **Projekt → Dem Projekt hinzufügen** einbinden und als `Project1.cbproj` speichern. |
 
 ## 6. Fazit
 

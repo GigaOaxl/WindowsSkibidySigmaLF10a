@@ -23,7 +23,9 @@ WindowsSkibidySigmaLF10a/
 └── README.md
 ```
 
-*(An die tatsächlichen Dateinamen anpassen, sobald das Projekt angelegt ist.)*
+Quelltexte (`.cpp`, `.h`) sind wie bei C++Builder üblich als UTF-8 mit BOM und CRLF gespeichert.
+Die `.exe` wird statisch gelinkt (`UsePackages = false`, `DynamicRTL = false`) und läuft daher
+auch auf Rechnern ohne C++Builder.
 
 | Datei | Zweck |
 |-------|-------|
