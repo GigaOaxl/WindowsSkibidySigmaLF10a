@@ -16,6 +16,7 @@
 | 27.11.2026 | Repository eingerichtet, `.gitignore`, `.gitattributes`, Dokumentationsgerüst | Vova |
 | 27.11.2026 | VCL-Projekt `Project1` mit leerem Hauptformular `frmHaupt` angelegt | Vova |
 | 27.11.2026 | Oberfläche: Beschriftungen, Buttons, Eingabefeld, Farbraster, Ereignisse zugewiesen | Vova |
+| 27.11.2026 | Logik der vier Ereignishandler umgesetzt | Vova |
 
 ## 3. Aufgabenverteilung
 

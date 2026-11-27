@@ -71,7 +71,9 @@ Implementierung in `Unit1.cpp`.
 
 ## 6. Fehlerbehandlung
 
-Es gibt keine Zahleneingaben; ein leeres Eingabefeld ergibt eine leere Beschriftung.
+Es gibt keine Zahleneingaben, daher kann keine Umwandlung fehlschlagen. Ein leeres
+Eingabefeld ergibt eine leere Beschriftung. Unerwartete Ausnahmen fängt `Project1.cpp` ab
+und zeigt sie mit `Application->ShowException` an.
 *(Ergänzen, falls weitere Prüfungen hinzukommen.)*
 
 ## 7. Tests
